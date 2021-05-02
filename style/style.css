@@ -1,0 +1,148 @@
+/*
+*  resetcss
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+*  Fim - resetcss
+*/
+
+:root {
+  --preto: rgb(0, 0, 0);
+  --cor-preto: #333;
+  --cor-branca: white;
+  --cor-vermelho: #E50914;
+}
+
+/*Elementos base*/
+
+body {
+  background: var(--preto);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--cor-branca);
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--cor-vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+/*Filme principal*/
+
+.filme-principal {
+  font-size: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)100%), url("/img/gow.jpg") no-repeat center center;
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: var(--cor-branca);
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover {
+  background-color: var(--cor-branca);
+  color: var(--cor-preto);
+  opacity: 0.8;
+}
+
+.menu:hover {
+  color:aliceblue;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filmes {
+  height: 300px;
+  width: 100%;
+  display: block;
+}
+
+.border-white {
+  border: white solid;
+}
+
+.modal-principal {
+  color: #333;
+}
+
+.video-youtube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  /* optional */
+  width: 100%;
+  height: 100%;
+}
+
+.titulo-cards {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(192, 192, 192);
+  margin-left: 10px;
+}
+
+/* =================================================================*/
+
